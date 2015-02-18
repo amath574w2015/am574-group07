@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+
+\usepackage{hyperref}  % for urls and hyperlinks
+
+
+\setlength{\textwidth}{6.2in}
+\setlength{\oddsidemargin}{0.3in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{8.9in}
+\setlength{\voffset}{-1in}
+\setlength{\headsep}{26pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+% input some useful macros from RJLmacros.tex:
+\input{../RJLmacros}
+
+\begin{document}
+
+% title part
+\title{\bf Initial Proposal}
+\author{Qi Guo, Peng Zheng}
+\date{}
+\maketitle
+
+In this project, we mainly focus on the some Traffic Flow Models which is based on the Lighthill-Whitham-Richards model (LWR). The LWR model consist of a scalar nonlinear conservation law in one dimension,
+\[\rho_t+f(\rho)_x=0\]
+where $\rho(x,t)$ is the traffic density and $f(\rho)$ is the flux function,
+\[f(\rho)=\rho U(\rho),\]
+here $U(\rho)$ is a special velocity function that is assumed to depend only on the density.
+
+\vskip 8pt
+For this project, we want to complete two objects.
+\begin{itemize}
+\item Based on the LWR model, assuming that we have a discontinuous, piecewise-linear flux. We want to explore what kind of solution behavior will we have if we smooth out the discontinuity in the flux function over a small distance $\eps\ll1$ and then solve the Riemann problem by limit $\eps\rightarrow0$. And see if this kind of solution make physical sense.
+\vskip 8pt
+From \cite{WS}, we will explore using a  Godunov-type numerical scheme to implement this method.
+\item The second goal of this project is to study non-convex flux for the night-time traffic model. For this model we use car-following model: the local density $\rho_k(t)$ is observed by the $k$th driver at time $t$
+\[\rho_k(t)=\frac{1}{X_{k+1}(t)-X_k(t)},\]
+where $X_k(t)$ is the position of each individual car.
+\vskip 8pt
+From a non-convex flux, we can see a very interesting feature called clustering. This is caused by the fact that uniformly spaced traffic is unstable to small perturbations. We want to study the behavior under different perturbations including the situation that when the randomness effect is considered.
+
+% references
+\end{itemize}
+{\footnotesize
+\begin{thebibliography}{100}
+\bibitem{RJ} R.J. Leveque, Some Traffic Flow Models Illustrating Hyperbolic Behavior, present at the SIAM Annual Meeting, July 10, 2001.
+\bibitem{WS} Jeffrey K. Wiens, John M. Stockie, JF Williams, Riemann solver for a kinematic wave traffic model with discontinuous flux, 2013.
+\bibitem{JW} Rui Jiang, Qing-Song Wu, The night driving behavior in a car-following model, 2006.
+\end{thebibliography}
+}
+\end{document}
