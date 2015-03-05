@@ -1,0 +1,163 @@
+\documentclass[10pt]{article}
+\usepackage{amssymb,indentfirst,listings,color,amsmath}
+\usepackage{graphicx,epstopdf}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\newcommand{\e}{\epsilon}
+\newcommand{\p}{\partial}
+\newcommand{\om}{\omega}
+\newcommand{\f}{\frac}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Om}{\Omega}
+\newcommand{\Ra}{\Rightarrow}
+\title{\textbf{Draft of AMATH 574}}
+\author{Qi Guo, Peng Zheng}
+\date{}
+\begin{document}
+\maketitle
+%-----------------------------------------------------------------------------------------------------------------------%
+\section{Introduction}
+
+In 1950's, Lighthill, Whitham and Richards proposed the a model, now known as LWR model for traffic flow problem. Specifically, this model is a scalar nonlinear equation satisfying hyperbolic conservation law.
+
+\[
+\rho_t+f(\rho)_x=0
+\]
+where $f(\rho)=\rho v(\rho)$ and the normalized vehicle density $\rho$ is within the range of $[0,1]$.
+
+\subsection{Freeway Model}
+
+In AAA, Wiens, Stockie and Williams discussed a flux function with discontinuity at a single point $\rho_m$. This flux function is motivated by the empirical data from freeway flow-density relationship [BBB]. In the first part of project, our goal is to review the solving procedure, and design our own ODE solver of car-following model.
+
+There are a couple of ways to deal with it. In CCC, Dias and Figueira used a mollifier function $\eta_\epsilon$ to smooth out this discontinuity in the flux function. The mollifier solution has been proven to converge to solutions of the original problem as $\epsilon\rightarrow 0$. In this paper, we will use this method.
+
+In the following section, we will justify the convexity of the mollified solution and acquire the closed-form solution. In this part, the problem can be solved in the method of convex-hull as in Chapter 16 of DDD, and approached to the real solution by taking $\epsilon \rightarrow 0$.
+
+If we take
+\[\rho_k=\frac{1}{X_{k+1}-X_{k}},\]
+and for $k$th car, the ODE for the motion of cars become a set of nonlinear equations:
+\[
+X_k'(t)=U(\rho_k(t)),
+\]
+for $k=1,2,...,m$, where $m$ is the number of cars and $U$ is the velocity. We will design our own ODE solver and compare the result with the mollified solution.
+
+\subsection{Night Ride Model}
+
+In the second part of this paper, the night ride model in [EEE] will be discussed. In the situation of night driving, if there are cars ahead, it is easier to drive by following their tail lights. When facing the empty road, the driver's speed will be limited by the illuminating range of their own head lights. Based on these assumptions, we could model the flux function $f(\rho)$.
+
+The night-time model has interesting features. For one thing, Oleinik's entropy condition is not the correct admissibility condition. Another feature is on the instability. With this property, we are able to obtain the clustered solutions. In this paper, we will mainly look into the second feature, by implementing ODE solver for car-following model to simulate the trajectory
+of cars with reasonable perturbation.
+%-----------------------------------------------------------------------------------------------------------------------%
+\section{Freeway Model with Discontinuous Flux}
+\label{sec:sec2}
+%----------------------------------------------------------
+\subsection{Overview}
+
+The freeway model consists the scalar conservation law:
+\[
+\rho_t + f(\rho)_x = 0
+\]
+with flux function
+ \[f(\rho)=\left\{
+  \begin{array}{l l}
+    g_f(\rho)=\rho \ \ \ if\ \  0\leq \rho <\rho_m\\
+    g_c(\rho)=\gamma(1-\rho) \ \ \ if\ \ \rho_m\leq\rho\leq 1
+  \end{array} \right.\]
+
+  From the empirical data, we should set $g_f(\rho_m)>g_c(\rho_m)$, which indicates
+  \[
+  0<\gamma<\frac{\rho_m}{1-\rho_m}.
+  \]
+
+  The flux function is discontinuous at $\rho_m$, which requires more if we want to utilize tools in Chapter 16 in [DDD].
+%----------------------------------------------------------
+\subsection{Mollification Approach}
+
+We utilize the mollifier approach to approximate the original problem:
+\[
+\frac{\p \rho_\e}{\p t} + \frac{\p f_\e(\rho_\e)}{\p x} = 0,
+\]
+
+where the mollified flux function can be constructed as in [AAA]
+\[
+f_{\e}(\rho_{\e})=\rho_{\e}+(\gamma-(\gamma+1)\rho_{\e})\int_{\rho_m-\e}^{\rho_{\e}} \eta_\e(s-\rho_\e) ds
+\]
+with $0<\epsilon<1$. The mollifier function is $\eta_\e(s)=\frac{1}{\e}\eta(s/\e)$, and $\eta(s)$ (canonical mollifier) satisfies (from [DDD]):
+\\\\
+(1) $\eta\geq 0$;\\
+(2) $\eta$ has smooth derivatives of any order, and also compactly supported on $[-1,1]$;\\
+(3) $\eta(-s)=\eta(s)$ for all real $s$;\\
+(4) $\int_{-\infty}^{\infty} \eta(s) ds=1$.
+\\\\
+
+In [AAA], they select the explicit form of the canonical mollifier as:
+ \[\eta(s)=\left\{
+  \begin{array}{l l}
+    C\exp(1/(s^2-1)) \ \ \ if\ \ |s|<1\\
+    0 \ \ \ if\ \ |s|\geq 1
+  \end{array} \right.\]
+
+  With the 4th condition of the canonical mollifier, we can obtain $C\approx 2.25$. Now it is reasonable to use the standard tools to solve the mollified problem.
+  In [CCC], it has been proved that solutions to mollified problem converge to solutions to the original problem as $\e\rightarrow 0$.
+%----------------------------------------------------------
+\subsection{Anisotropic Flows and Entropy Condition}
+
+Drivers mainly focus on the vehicles in front of them. This phenomenon is called anisotropic, which is very different from gas dynamics or acoustics. Hence models based on fluid dynamics, where Oleinik's entropy condition dominates, often violate the anisotropic behavior in traffic flow.
+
+%----------------------------------------------------------
+\subsection{Exact Solution to Mollified Problem}
+\subsubsection{Convexity of Mollified Flux}
+\subsubsection{Convex-Hull Method}
+%----------------------------------------------------------
+\subsection{Car-Following Simulation}
+%-----------------------------------------------------------------------------------------------------------------------%
+\section{Night Ride Model with Clustering}
+%----------------------------------------------------------
+\subsection{Overview}
+
+For night driving model, we will have a different flux function compare to the previous part due to the special situation. When driving at night on an unfamiliar mountain road, facing with the empty road will cause the speed limitation by the uncertainty of the road condition.
+However if there are other cars in front of the road, it will be much easier to drive faster, since their tail lights indicate how the road twists and turns.
+%----------------------------------------------------------
+\subsection{Mathematical Model}
+
+For here we still use LWR model where $f(\rho)=\rho U(\rho)$, and construct our flux function as follows,
+\[U(\rho)=\left\{\begin{array}{lll}U_0&\text{if }\rho<\rho_a\\c\rho&\text{if }\rho_a\leq\rho\leq\rho_b\\U_1(1-\rho)&\text{if }\rho>\rho_b\end{array}\right.\]
+This model illustrate that the velocity will stay at some constant value $U_0$ when the density is low, and will be increasing as density increase in some range, and then finally decrease when the density is sufficiently large.
+\vskip 8pt
+In this problem, we consider the car-following model and its ODE solver as in Section \ref{sec:sec2}. In the model, the motion of $(n+1)$th car which follows $n$th car is given by,
+\begin{align*}
+\rho_{n+1}(t) &= \frac{1}{x_n(t)-x_{n+1}(t)}\\
+\Rightarrow\hskip35ptv_{n+1}(t)&=U(\rho_{n+1}(t))\\
+\Rightarrow~~x_{n+1}(t+\Delta t)&=x_{n+1}(t)+v_{n+1}(t)\Delta t
+\end{align*}
+where $x_n$, $x_{n+1}$ and $v_n$, $v_{n+1}$ are the positions and velocities of cars $n$ and $n+1$.
+%----------------------------------------------------------
+\subsection{Clustering Behavior}
+
+If we solve this system of ODE with the initial data consisting of a set of cars that are uniformly spaced (constant headway $\Delta^0$), we will see an interesting feature of the solution, clustering. This behavior is due to the non-convexity of the flux. When $\rho_a\leq\rho\leq\rho_b$, uniformly spaced traffic with headway $\Delta^0$ traveling at speed $U(1/\Delta t^0)$ is unstable to small perturbations. Since there is no car in front of the first car, the first car's speed will slow down and this will cause second car speed up. And the third car will slow down due to the increase of distance with second car and fourth car will speed up, etc. The uniform flow naturally breaks up into platoons of two cars each. At later time the same behavior repeat, and we will have 4-cars platoons and so on.
+\vskip 8pt
+This behavior is very interesting but in the real life we rarely see the car pare up at exactly same number. Instead we usually observe a bunch of cars will form a group, but different groups are not necessarily have same number of cars. In order to simulating this kind of behavior, we want to add a random term to the velocity at every step,
+\[v_{n+1}(t)=U(\rho_{n+1}(t))+A\epsilon,\]
+where $\epsilon$ is a random variable with the uniformly distribution on $[-0.5,0.5]$ and $A$ is the amplitude of the perturbation. Here we need to consider the condition impose on $A$ every time step. Since we don't want any cars cash with each other due to the perturbation.
+\begin{align*}
+&\left\{\begin{array}{lll}
+x_{n+1}(t+\Delta t)&=&x_{n+1}(t)+\Delta t(U(\rho_{n+1}(t))+A(t)\epsilon_1)\\
+x_{n}(t+\Delta t)&=&x_{n}(t)+\Delta t(U(\rho_{n}(t))+A(t)\epsilon_2)
+\end{array}\right.\\
+\Rightarrow~~&x_n(t+\Delta t)-x_{n+1}(t+\Delta t)\\
+&=x_n(t)-x_{n+1}(t)+\Delta t(U(\rho_{n}(t))-U(\rho_{n+1}(t))+A(t)\epsilon_1-A(t)\epsilon_2)>0
+\end{align*}
+which requires,
+\begin{align*}
+&x_n(t)-x_{n+1}(t)+\Delta t(U(\rho_{n}(t))-U(\rho_{n+1}(t))-A(t))>0\\
+\Rightarrow~~&A(t)<\frac{x_{n}(t)-x_{n+1}(t)}{\Delta t}+[U(\rho_{n}(t))-U(\rho_{n+1}(t))].
+\end{align*}
+Therefore we set our amplitude to be,
+\[A(t)=\frac{1}{10}\left(\frac{x_{n}(t)-x_{n+1}(t)}{\Delta t}+[U(\rho_{n}(t))-U(\rho_{n+1}(t))]\right).\]
+Then we can see what will happen with this parameter setting.
+%----------------------------------------------------------
+\subsection{Car-Following Simulation}
+\end{document}
+
