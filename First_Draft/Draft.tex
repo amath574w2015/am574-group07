@@ -62,8 +62,8 @@ The freeway model consists the scalar conservation law:
 with flux function
  \[f(\rho)=\left\{
   \begin{array}{l l}
-    g_f(\rho)=\rho \ \ \ if\ \  0\leq \rho <\rho_m\\
-    g_c(\rho)=\gamma(1-\rho) \ \ \ if\ \ \rho_m\leq\rho\leq 1
+    g_f(\rho)=\rho \ \ \ \text{if}\ \  0\leq \rho <\rho_m\\
+    g_c(\rho)=\gamma(1-\rho) \ \ \ \text{if}\ \ \rho_m\leq\rho\leq 1
   \end{array} \right.\]
 
   From the empirical data, we should set $g_f(\rho_m)>g_c(\rho_m)$, which indicates
@@ -81,9 +81,10 @@ We utilize the mollifier approach to approximate the original problem:
 \]
 
 where the mollified flux function can be constructed as in [AAA]
-\[
+\begin{equation}
 f_{\e}(\rho_{\e})=\rho_{\e}+(\gamma-(\gamma+1)\rho_{\e})\int_{\rho_m-\e}^{\rho_{\e}} \eta_\e(s-\rho_\e) ds
-\]
+\label{eq:flux}
+\end{equation}
 with $0<\epsilon<1$. The mollifier function is $\eta_\e(s)=\frac{1}{\e}\eta(s/\e)$, and $\eta(s)$ (canonical mollifier) satisfies (from [DDD]):
 \\\\
 (1) $\eta\geq 0$;\\
@@ -95,8 +96,8 @@ with $0<\epsilon<1$. The mollifier function is $\eta_\e(s)=\frac{1}{\e}\eta(s/\e
 In [AAA], they select the explicit form of the canonical mollifier as:
  \[\eta(s)=\left\{
   \begin{array}{l l}
-    C\exp(1/(s^2-1)) \ \ \ if\ \ |s|<1\\
-    0 \ \ \ if\ \ |s|\geq 1
+    C\exp(1/(s^2-1)) \ \ \ \text{if}\ \ |s|<1\\
+    0 \ \ \ \text{if}\ \ |s|\geq 1
   \end{array} \right.\]
 
   With the 4th condition of the canonical mollifier, we can obtain $C\approx 2.25$. Now it is reasonable to use the standard tools to solve the mollified problem.
@@ -104,12 +105,51 @@ In [AAA], they select the explicit form of the canonical mollifier as:
 %----------------------------------------------------------
 \subsection{Anisotropic Flows and Entropy Condition}
 
-Drivers mainly focus on the vehicles in front of them. This phenomenon is called anisotropic, which is very different from gas dynamics or acoustics. Hence models based on fluid dynamics, where Oleinik's entropy condition dominates, often violate the anisotropic behavior in traffic flow.
+Drivers mainly focus on the vehicles in front of them. This phenomenon is called anisotropic, which is very different from gas dynamics or acoustics. Hence models based on fluid dynamics, where Oleinik's entropy condition dominates, often violate the anisotropic behavior in traffic flow, see [EEE].
+
+Zhang set two mathematical criteria for anisotropic in [FFF], and Wiens proved that this model also satisfies the anisotropic criteria in [GGG]. Even though there are reasons to resist Oleinik's condition, this criterion still provides reasonable solution to this problem.
 
 %----------------------------------------------------------
 \subsection{Exact Solution to Mollified Problem}
 \subsubsection{Convexity of Mollified Flux}
+
+The flux function is Equation \ref{eq:flux}. We can calculate its first and second derivative:
+\[
+f'_\epsilon(\rho_\epsilon)=1+[\gamma-(\gamma+1)
+\rho_\epsilon]\eta_\epsilon(\rho_\epsilon-\rho_m)-(\gamma+1)\int_{\rho_m-\epsilon}^{\rho_\epsilon}\eta_\epsilon(s-\rho_m) ds
+\]
+and
+\[
+f''_\epsilon(\rho_\epsilon)=G(\rho_\epsilon)P(\rho_\epsilon)
+\]
+where
+\[G(\rho_\epsilon)=\frac{2\eta_\epsilon(\rho_\epsilon-\rho_m)}{\epsilon^2(\gamma+1)[(\frac{\rho_\epsilon-\rho_m}{\epsilon})^2-1]^2}
+\]
+and
+\[P(\rho_\epsilon)=(\frac{\gamma}{\gamma+1}-\rho_\epsilon)(\rho_m-\rho_\epsilon)-\epsilon^2[(\frac{\rho_\epsilon-\rho_m}{\epsilon})^2-1]^2.
+\]
+
+Since $G(\rho_\epsilon)\geq 0$, thus we only need to focus on $P(\rho_\epsilon)$. It has been proven that $f''(\rho_\epsilon)\geq 0$ when $\rho_\epsilon\in [\rho_m,1]$, and $f''_\epsilon(\rho_\epsilon)\leq 0$ when $\rho_\epsilon\in[0,\rho_m]$.
 \subsubsection{Convex-Hull Method}
+
+We will use standard techniques of convex-hull method to solve this problem.
+\\
+
+%---------------------------------------------
+{\bf Case 1} ($\rho_r<\rho_m<\rho_l$)
+\\
+
+\vskip 1cm
+%---------------------------------------------
+{\bf Case 2} ($\frac{\gamma}{\gamma+1}<\rho_l<\rho_m<\rho_r$)
+\\
+
+\vskip 1cm
+%---------------------------------------------
+{\bf Case 3} ($\rho_l<\rho_m<\rho_r$ and $\frac{\gamma}{\gamma+1}\geq \rho_l$)
+\\
+
+\vskip 1cm
 %----------------------------------------------------------
 \subsection{Car-Following Simulation}
 %-----------------------------------------------------------------------------------------------------------------------%
