@@ -14,19 +14,19 @@ subroutine rp1(maxmx,meqn,mwaves,maux,mbc,mx,ql,qr,auxl,auxr,wave,s,amdq,apdq)
     
     implicit double precision (a-h,o-z)
 
-    integer :: maxmx, meqn, mwaves, mbc, mx
-        
+    integer :: maxmx, meqn, mwaves, mbc, mx   
     double precision :: ql(meqn,1-mbc:maxmx+mbc)
     double precision :: qr(meqn,1-mbc:maxmx+mbc)
     double precision :: s(mwaves, 1-mbc:maxmx+mbc)
     double precision :: wave(meqn, mwaves, 1-mbc:maxmx+mbc)
     double precision :: amdq(meqn, 1-mbc:maxmx+mbc)
     double precision :: apdq(meqn, 1-mbc:maxmx+mbc)
-    double precision :: fql, fqr, fpql, fpqr, eps, rhom, gamma
+    double precision :: fql, fqr, fqs, fpql, fpqr, fpqs, qs, eps, rhom, gamma
+    real(kind=8), external :: fp
     integer :: i
     logical :: efix
  
-    efix = .false.   !# Compute correct flux for transonic rarefactions
+    efix = .true.   !# Compute correct flux for transonic rarefactions
  	eps = 0.1d0
  	rhom = 0.5d0
  	gamma = 0.5d0 !# Parameter for mollifier approximation
@@ -36,8 +36,8 @@ subroutine rp1(maxmx,meqn,mwaves,maux,mbc,mx,ql,qr,auxl,auxr,wave,s,amdq,apdq)
         call fsub(ql(1,i),fql,fpql,eps,rhom,gamma)
         call fsub(qr(1,i-1),fqr,fpqr,eps,rhom,gamma)
 
-        if (abs(wave(1,1,i)).lt.1e-04) then
-            s(1,i) = exp(ql(1,i))
+        if (abs(wave(1,1,i)).lt.1e-06) then
+            s(1,i) = fpql
         else
             s(1,i) = (fql - fqr) / wave(1,1,i)
         endif
@@ -47,8 +47,10 @@ subroutine rp1(maxmx,meqn,mwaves,maux,mbc,mx,ql,qr,auxl,auxr,wave,s,amdq,apdq)
 
 	    if (efix) then
             if (fpql.gt.0.d0 .and. fpqr.lt.0.d0) then
-                amdq(1,i) = - 1.d0/2.d0 * fqr
-                apdq(1,i) =   1.d0/2.d0 * fql
+            	qs = zeroin(ql(1,i),qr(1,i-1),fp,1e-16)
+            	call fsub(qs,fqs,fpqs,eps,rhom,gamma)
+                amdq(1,i) = fqs - fqr
+                apdq(1,i) = fql - fqs
             endif
         endif
     enddo
@@ -66,7 +68,7 @@ subroutine fsub(q,fq,fpq,eps,rhom,gamma)
     double precision :: intl, dx
     integer :: n, i
 
-    n = int((q-rhom+eps)/eps) + 1 !# mesh cell for integration
+    n = 500*(int((q-rhom+eps)/eps) + 1) !# mesh cell for integration
     dx = (q-rhom+eps)/n !# mesh size for integration
     intl = 0.d0
 
@@ -75,11 +77,14 @@ subroutine fsub(q,fq,fpq,eps,rhom,gamma)
     enddo
 
     fq = q + (gamma-(gamma+1.d0)*q)*intl
-    fpq = 1.d0 + (gamma-(gamma+1)*q)*eta(q-rhom,eps) - (gamma+1.d0)*intl
+    fpq = 1.d0 + (gamma-(gamma+1.d0)*q)*eta(q-rhom,eps) - (gamma+1.d0)*intl
 end subroutine fsub
 
 
+
+!------------------------------------------------------------------------
 real(kind=8) function eta(x,eps)
+!------------------------------------------------------------------------
     implicit none
     real(kind=8), intent(in) :: x, eps
     double precision :: C
@@ -92,3 +97,30 @@ real(kind=8) function eta(x,eps)
     	eta = 0.d0
     endif
 end function eta
+
+!------------------------------------------------------------------------
+real(kind=8) function fp(x)
+!------------------------------------------------------------------------
+    implicit none
+    real(kind=8), external :: eta
+    real(kind=8), intent(in) :: x
+    double precision :: C, eps, intl, dx, rhom, gamma
+    integer :: n,i
+
+    !# Some constants
+    rhom = 0.5d0
+    gamma = 0.5d0
+    eps = 0.1d0
+    C = 2.25228362104358101049978125556d0
+
+    !# Start to integrate
+    n = 500*(int((x-rhom+eps)/eps) + 1) !# mesh cell for integration
+    dx = (x-rhom+eps)/n !# mesh size for integration
+    intl = 0.d0
+    do i = 1,n
+    	intl = intl + dx*eta((i-0.5d0)*dx-eps,eps)
+    enddo
+
+    !# Evaluate fp
+    fp = 1.d0 + (gamma-(gamma+1.d0)*x)*eta(x-rhom,eps) - (gamma+1.d0)*intl
+end function fp

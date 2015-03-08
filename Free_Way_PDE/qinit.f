@@ -13,12 +13,14 @@ c
       common /comic/ beta
 c
 c
-      pi2 = 8.d0*datan(1.d0)  !# = 2 * pi
       do 150 i=1,mx
          xcell = xlower + (i-0.5d0)*dx
-         q(1,i) = 0.d0
-         if (xcell.gt.0.d0 .and. xcell.lt.1.d0) then
-             q(1,i) = 2.d0
+c         q(1,i) = 0.2d0
+         q(1,i) = 0.9d0
+         if (xcell.lt.0.d0) then
+c             q(1,i) = 0.9d0
+c             q(1,i) = 0.4d0
+             q(1,i) = 0.2d0
              endif
   150    continue
 c

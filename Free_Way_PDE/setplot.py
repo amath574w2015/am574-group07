@@ -30,8 +30,8 @@ def setplot(plotdata):
 
     # Set up for axes in this figure:
     plotaxes = plotfigure.new_plotaxes(name='Solution')
-    plotaxes.xlimits = 'auto'
-    plotaxes.ylimits = [-0.1, 5.0]
+    plotaxes.xlimits = [-2,2]
+    plotaxes.ylimits = [-0.1, 1.1]
     plotaxes.title = 'q[0]'
 
     # Set up for item on these axes:

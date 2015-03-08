@@ -36,6 +36,7 @@ MODULES = \
 SOURCES = \
   qinit.f \
   setprob.f \
+  zeroin.f\
   rp1_freeway.f90 \
   $(CLAW)/classic/src/1d/setaux.f90 \
   $(CLAW)/classic/src/1d/bc1.f \
