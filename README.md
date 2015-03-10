@@ -8,7 +8,9 @@
 
 * [Initial_Proposal.pdf](initial_proposal/Initial_Proposal.pdf)
 
-## Title: Models of Traffic Flow with Discontinuous and Non-convex Flux
+## Title:
+
+Models of Traffic Flow with Discontinuous and Non-convex Flux
 
 ## Abstract: 
 
