@@ -37,8 +37,12 @@ def setrun(claw_pkg='classic'):
     #------------------------------------------------------------------
     
     probdata = rundata.new_UserData(name='probdata',fname='setprob.data')
-    probdata.add_param('beta',  200., 'for width of Gaussian data')
+    inidata = np.loadtxt('/Users/Peng/Documents/AMATH574/am574-group07/presentation/initial_data.txt')
+    ql = inidata[0]
+    qr = inidata[1]
     
+    probdata.add_param('ql', ql, 'initial condition')
+    probdata.add_param('qr', qr, 'initial condition')
     #------------------------------------------------------------------
     # Standard Clawpack parameters to be written to claw.data:
     #------------------------------------------------------------------
