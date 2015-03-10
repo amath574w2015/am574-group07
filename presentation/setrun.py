@@ -37,7 +37,7 @@ def setrun(claw_pkg='classic'):
     #------------------------------------------------------------------
     
     probdata = rundata.new_UserData(name='probdata',fname='setprob.data')
-    inidata = np.loadtxt('/Users/Peng/Documents/AMATH574/am574-group07/presentation/initial_data.txt')
+    inidata = np.loadtxt('./initial_data.txt')
     ql = inidata[0]
     qr = inidata[1]
     
