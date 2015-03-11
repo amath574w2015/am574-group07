@@ -16,9 +16,9 @@ c
 c
       do 150 i=1,mx
          xcell = xlower + (i-0.5d0)*dx
-         q(1,i) = ql
+         q(1,i) = qr
          if (xcell.lt.0.d0) then
-             q(1,i) = qr
+             q(1,i) = ql
              endif
   150    continue
 c

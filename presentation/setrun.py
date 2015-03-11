@@ -58,11 +58,11 @@ def setrun(claw_pkg='classic'):
     clawdata.num_dim = num_dim
     
     # Lower and upper edge of computational domain:
-    clawdata.lower[0] = -4.000000e+00          # xlower
-    clawdata.upper[0] = 4.000000e+00          # xupper
+    clawdata.lower[0] = -8.000000e+00          # xlower
+    clawdata.upper[0] = 8.000000e+00          # xupper
     
     # Number of grid cells:
-    clawdata.num_cells[0] = 400      # mx
+    clawdata.num_cells[0] = 800      # mx
     
 
     # ---------------
