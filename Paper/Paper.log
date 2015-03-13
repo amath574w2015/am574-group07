@@ -1,0 +1,879 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 MAR 2015 22:12
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Paper.tex
+(./Paper.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks16
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count95
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen107
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks18
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks19
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks22
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+)
+\c@ContinuedFloat=\count111
+Package caption Info: listings package is loaded.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count112
+\c@subtable=\count113
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count114
+\float@exts=\toks23
+\float@box=\box30
+\@float@everytoks=\toks24
+\@floatcapt=\box31
+)
+(../RJLmacros.tex
+\c@equationgroup=\count115
+) (./Paper.aux)
+\openout1 = `Paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+\c@lstlisting=\count116
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen133
+\scratchbox=\box32
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen134
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks26
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.485pt, 108.405pt)
+* v-part:(T,H,B)=(108.405pt, 578.15999pt, 108.405pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.485pt
+* \textheight=578.15999pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-0.86499pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (0.24324pt too wide) in paragraph at lines 17--18
+[]\OT1/cmr/m/n/9 In this project, we in-ves-ti-gate two mod-els of traf-fic flo
+w based on Lighthill-Whitham-
+ []
+
+
+LaTeX Warning: Citation `WS' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Citation `RJ' on page 1 undefined on input line 35.
+
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package epstopdf Info: Source file: <./figs/freeway_flux_original.eps>
+(epstopdf)                    date: 2015-03-12 19:18:56
+(epstopdf)                    size: 119146 bytes
+(epstopdf)             Output file: <./figs/freeway_flux_original-eps-converted
+-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/freeway_flux_origin
+al-eps-converted-to.pdf ./figs/freeway_flux_original.eps>
+(epstopdf)             \includegraphics on input line 59.
+runsystem(repstopdf --outfile=./figs/freeway_flux_original-eps-converted-to.pdf
+ ./figs/freeway_flux_original.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/freeway_flux_original-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:48
+(epstopdf)                    size: 10590 bytes.
+
+<./figs/freeway_flux_original-eps-converted-to.pdf, id=14, 433.62pt x 289.08pt>
+File: ./figs/freeway_flux_original-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figs/freeway_flux_original-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/freeway_flux_original-eps-converted-to.pdf used
+ on input line 59.
+(pdftex.def)             Requested size: 289.07999pt x 192.72981pt.
+Package epstopdf Info: Source file: <./figs/freeway_flux_mollified.eps>
+(epstopdf)                    date: 2015-03-12 19:18:46
+(epstopdf)                    size: 132976 bytes
+(epstopdf)             Output file: <./figs/freeway_flux_mollified-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/freeway_flux_mollif
+ied-eps-converted-to.pdf ./figs/freeway_flux_mollified.eps>
+(epstopdf)             \includegraphics on input line 82.
+runsystem(repstopdf --outfile=./figs/freeway_flux_mollified-eps-converted-to.pd
+f ./figs/freeway_flux_mollified.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/freeway_flux_mollified-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:49
+(epstopdf)                    size: 14919 bytes.
+
+<./figs/freeway_flux_mollified-eps-converted-to.pdf, id=15, 433.62pt x 289.08pt
+>
+File: ./figs/freeway_flux_mollified-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use ./figs/freeway_flux_mollified-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/freeway_flux_mollified-eps-converted-to.pdf use
+d on input line 82.
+(pdftex.def)             Requested size: 289.07999pt x 192.72981pt.
+ [2 <./figs/freeway_flux_original-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+
+ []
+
+
+LaTeX Warning: Citation `DF' on page 3 undefined on input line 100.
+
+
+LaTeX Warning: Reference `eq:flux' on page 3 undefined on input line 116.
+
+[3 <./figs/freeway_flux_mollified-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `WS' on page 4 undefined on input line 132.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+[4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 191.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
+Package epstopdf Info: Source file: <./figs/initial_condition_1/frame0000fig1.e
+ps>
+(epstopdf)                    date: 2015-03-12 20:24:43
+(epstopdf)                    size: 23417 bytes
+(epstopdf)             Output file: <./figs/initial_condition_1/frame0000fig1-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_1
+/frame0000fig1-eps-converted-to.pdf ./figs/initial_condition_1/frame0000fig1.ep
+s>
+(epstopdf)             \includegraphics on input line 194.
+runsystem(repstopdf --outfile=./figs/initial_condition_1/frame0000fig1-eps-conv
+erted-to.pdf ./figs/initial_condition_1/frame0000fig1.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_1/frame0000fig1-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:51
+(epstopdf)                    size: 33500 bytes.
+
+<./figs/initial_condition_1/frame0000fig1-eps-converted-to.pdf, id=70, 578.16pt
+ x 433.62pt>
+File: ./figs/initial_condition_1/frame0000fig1-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./figs/initial_condition_1/frame0000fig1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_1/frame0000fig1-eps-converted
+-to.pdf used on input line 194.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+Package epstopdf Info: Source file: <./figs/initial_condition_1/frame0001fig1.e
+ps>
+(epstopdf)                    date: 2015-03-12 20:24:43
+(epstopdf)                    size: 24292 bytes
+(epstopdf)             Output file: <./figs/initial_condition_1/frame0001fig1-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_1
+/frame0001fig1-eps-converted-to.pdf ./figs/initial_condition_1/frame0001fig1.ep
+s>
+(epstopdf)             \includegraphics on input line 195.
+runsystem(repstopdf --outfile=./figs/initial_condition_1/frame0001fig1-eps-conv
+erted-to.pdf ./figs/initial_condition_1/frame0001fig1.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_1/frame0001fig1-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:52
+(epstopdf)                    size: 36608 bytes.
+
+<./figs/initial_condition_1/frame0001fig1-eps-converted-to.pdf, id=71, 578.16pt
+ x 433.62pt>
+File: ./figs/initial_condition_1/frame0001fig1-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./figs/initial_condition_1/frame0001fig1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_1/frame0001fig1-eps-converted
+-to.pdf used on input line 195.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+Package epstopdf Info: Source file: <./figs/initial_condition_1/_plots_ode_free
+way1_80.eps>
+(epstopdf)                    date: 2015-03-12 20:48:44
+(epstopdf)                    size: 69181 bytes
+(epstopdf)             Output file: <./figs/initial_condition_1/_plots_ode_free
+way1_80-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_1
+/_plots_ode_freeway1_80-eps-converted-to.pdf ./figs/initial_condition_1/_plots_
+ode_freeway1_80.eps>
+(epstopdf)             \includegraphics on input line 201.
+runsystem(repstopdf --outfile=./figs/initial_condition_1/_plots_ode_freeway1_80
+-eps-converted-to.pdf ./figs/initial_condition_1/_plots_ode_freeway1_80.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_1/_plots_ode_free
+way1_80-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:53
+(epstopdf)                    size: 32381 bytes.
+
+<./figs/initial_condition_1/_plots_ode_freeway1_80-eps-converted-to.pdf, id=72,
+ 1011.78pt x 361.35pt>
+File: ./figs/initial_condition_1/_plots_ode_freeway1_80-eps-converted-to.pdf Gr
+aphic file (type pdf)
+
+<use ./figs/initial_condition_1/_plots_ode_freeway1_80-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_1/_plots_ode_freeway1_80-eps-
+converted-to.pdf used on input line 201.
+(pdftex.def)             Requested size: 411.93877pt x 147.12338pt.
+
+Overfull \hbox (14.45377pt too wide) in paragraph at lines 201--205
+ []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
+
+ []
+
+[5 <./figs/initial_condition_1/frame0000fig1-eps-converted-to.pdf> <./figs/init
+ial_condition_1/frame0001fig1-eps-converted-to.pdf> <./figs/initial_condition_1
+/_plots_ode_freeway1_80-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figs/initial_condition_2/frame0000fig1.e
+ps>
+(epstopdf)                    date: 2015-03-12 20:28:20
+(epstopdf)                    size: 23417 bytes
+(epstopdf)             Output file: <./figs/initial_condition_2/frame0000fig1-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_2
+/frame0000fig1-eps-converted-to.pdf ./figs/initial_condition_2/frame0000fig1.ep
+s>
+(epstopdf)             \includegraphics on input line 229.
+runsystem(repstopdf --outfile=./figs/initial_condition_2/frame0000fig1-eps-conv
+erted-to.pdf ./figs/initial_condition_2/frame0000fig1.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_2/frame0000fig1-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:54
+(epstopdf)                    size: 33426 bytes.
+
+<./figs/initial_condition_2/frame0000fig1-eps-converted-to.pdf, id=166, 578.16p
+t x 433.62pt>
+File: ./figs/initial_condition_2/frame0000fig1-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./figs/initial_condition_2/frame0000fig1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_2/frame0000fig1-eps-converted
+-to.pdf used on input line 229.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+Package epstopdf Info: Source file: <./figs/initial_condition_2/frame0001fig1.e
+ps>
+(epstopdf)                    date: 2015-03-12 20:28:21
+(epstopdf)                    size: 23978 bytes
+(epstopdf)             Output file: <./figs/initial_condition_2/frame0001fig1-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_2
+/frame0001fig1-eps-converted-to.pdf ./figs/initial_condition_2/frame0001fig1.ep
+s>
+(epstopdf)             \includegraphics on input line 230.
+runsystem(repstopdf --outfile=./figs/initial_condition_2/frame0001fig1-eps-conv
+erted-to.pdf ./figs/initial_condition_2/frame0001fig1.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_2/frame0001fig1-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:55
+(epstopdf)                    size: 35362 bytes.
+
+<./figs/initial_condition_2/frame0001fig1-eps-converted-to.pdf, id=167, 578.16p
+t x 433.62pt>
+File: ./figs/initial_condition_2/frame0001fig1-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./figs/initial_condition_2/frame0001fig1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_2/frame0001fig1-eps-converted
+-to.pdf used on input line 230.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+Package epstopdf Info: Source file: <./figs/initial_condition_2/_plots_ode_free
+way2_80.eps>
+(epstopdf)                    date: 2015-03-12 20:49:05
+(epstopdf)                    size: 67959 bytes
+(epstopdf)             Output file: <./figs/initial_condition_2/_plots_ode_free
+way2_80-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_2
+/_plots_ode_freeway2_80-eps-converted-to.pdf ./figs/initial_condition_2/_plots_
+ode_freeway2_80.eps>
+(epstopdf)             \includegraphics on input line 236.
+runsystem(repstopdf --outfile=./figs/initial_condition_2/_plots_ode_freeway2_80
+-eps-converted-to.pdf ./figs/initial_condition_2/_plots_ode_freeway2_80.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_2/_plots_ode_free
+way2_80-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:56
+(epstopdf)                    size: 31294 bytes.
+
+<./figs/initial_condition_2/_plots_ode_freeway2_80-eps-converted-to.pdf, id=168
+, 1011.78pt x 361.35pt>
+File: ./figs/initial_condition_2/_plots_ode_freeway2_80-eps-converted-to.pdf Gr
+aphic file (type pdf)
+
+<use ./figs/initial_condition_2/_plots_ode_freeway2_80-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_2/_plots_ode_freeway2_80-eps-
+converted-to.pdf used on input line 236.
+(pdftex.def)             Requested size: 411.93877pt x 147.12338pt.
+
+Overfull \hbox (14.45377pt too wide) in paragraph at lines 236--240
+ []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--240
+
+ []
+
+[6 <./figs/initial_condition_2/frame0000fig1-eps-converted-to.pdf> <./figs/init
+ial_condition_2/frame0001fig1-eps-converted-to.pdf> <./figs/initial_condition_2
+/_plots_ode_freeway2_80-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figs/initial_condition_3/frame0000fig1.e
+ps>
+(epstopdf)                    date: 2015-03-12 20:16:40
+(epstopdf)                    size: 23393 bytes
+(epstopdf)             Output file: <./figs/initial_condition_3/frame0000fig1-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_3
+/frame0000fig1-eps-converted-to.pdf ./figs/initial_condition_3/frame0000fig1.ep
+s>
+(epstopdf)             \includegraphics on input line 258.
+runsystem(repstopdf --outfile=./figs/initial_condition_3/frame0000fig1-eps-conv
+erted-to.pdf ./figs/initial_condition_3/frame0000fig1.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_3/frame0000fig1-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:58
+(epstopdf)                    size: 33521 bytes.
+
+<./figs/initial_condition_3/frame0000fig1-eps-converted-to.pdf, id=263, 578.16p
+t x 433.62pt>
+File: ./figs/initial_condition_3/frame0000fig1-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./figs/initial_condition_3/frame0000fig1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_3/frame0000fig1-eps-converted
+-to.pdf used on input line 258.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+Package epstopdf Info: Source file: <./figs/initial_condition_3/frame0001fig1.e
+ps>
+(epstopdf)                    date: 2015-03-12 20:16:40
+(epstopdf)                    size: 23586 bytes
+(epstopdf)             Output file: <./figs/initial_condition_3/frame0001fig1-e
+ps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_3
+/frame0001fig1-eps-converted-to.pdf ./figs/initial_condition_3/frame0001fig1.ep
+s>
+(epstopdf)             \includegraphics on input line 259.
+runsystem(repstopdf --outfile=./figs/initial_condition_3/frame0001fig1-eps-conv
+erted-to.pdf ./figs/initial_condition_3/frame0001fig1.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_3/frame0001fig1-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:12:59
+(epstopdf)                    size: 33976 bytes.
+
+<./figs/initial_condition_3/frame0001fig1-eps-converted-to.pdf, id=264, 578.16p
+t x 433.62pt>
+File: ./figs/initial_condition_3/frame0001fig1-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./figs/initial_condition_3/frame0001fig1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_3/frame0001fig1-eps-converted
+-to.pdf used on input line 259.
+(pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
+Package epstopdf Info: Source file: <./figs/initial_condition_3/_plots_ode_free
+way3_80.eps>
+(epstopdf)                    date: 2015-03-12 20:49:30
+(epstopdf)                    size: 67061 bytes
+(epstopdf)             Output file: <./figs/initial_condition_3/_plots_ode_free
+way3_80-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/initial_condition_3
+/_plots_ode_freeway3_80-eps-converted-to.pdf ./figs/initial_condition_3/_plots_
+ode_freeway3_80.eps>
+(epstopdf)             \includegraphics on input line 265.
+runsystem(repstopdf --outfile=./figs/initial_condition_3/_plots_ode_freeway3_80
+-eps-converted-to.pdf ./figs/initial_condition_3/_plots_ode_freeway3_80.eps)...
+executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/initial_condition_3/_plots_ode_free
+way3_80-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-12 22:13:00
+(epstopdf)                    size: 30908 bytes.
+
+<./figs/initial_condition_3/_plots_ode_freeway3_80-eps-converted-to.pdf, id=265
+, 1011.78pt x 361.35pt>
+File: ./figs/initial_condition_3/_plots_ode_freeway3_80-eps-converted-to.pdf Gr
+aphic file (type pdf)
+
+<use ./figs/initial_condition_3/_plots_ode_freeway3_80-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/initial_condition_3/_plots_ode_freeway3_80-eps-
+converted-to.pdf used on input line 265.
+(pdftex.def)             Requested size: 411.93877pt x 147.12338pt.
+
+Overfull \hbox (14.45377pt too wide) in paragraph at lines 265--267
+ [] 
+ []
+
+[7 <./figs/initial_condition_3/frame0000fig1-eps-converted-to.pdf> <./figs/init
+ial_condition_3/frame0001fig1-eps-converted-to.pdf> <./figs/initial_condition_3
+/_plots_ode_freeway3_80-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figs/night_velocity_flux.eps>
+(epstopdf)                    date: 2015-03-12 19:38:43
+(epstopdf)                    size: 129100 bytes
+(epstopdf)             Output file: <./figs/night_velocity_flux-eps-converted-t
+o.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/night_velocity_flux
+-eps-converted-to.pdf ./figs/night_velocity_flux.eps>
+(epstopdf)             \includegraphics on input line 300.
+runsystem(repstopdf --outfile=./figs/night_velocity_flux-eps-converted-to.pdf .
+/figs/night_velocity_flux.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/night_velocity_flux-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2015-03-12 22:13:01
+(epstopdf)                    size: 13074 bytes.
+
+<./figs/night_velocity_flux-eps-converted-to.pdf, id=360, 1011.78pt x 361.35pt>
+File: ./figs/night_velocity_flux-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figs/night_velocity_flux-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/night_velocity_flux-eps-converted-to.pdf used o
+n input line 300.
+(pdftex.def)             Requested size: 505.89pt x 180.67456pt.
+
+Overfull \hbox (53.35722pt too wide) in paragraph at lines 299--302
+[]|   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
+
+ []
+
+Package epstopdf Info: Source file: <./figs/night_cluster.eps>
+(epstopdf)                    date: 2015-03-12 19:42:29
+(epstopdf)                    size: 201128 bytes
+(epstopdf)             Output file: <./figs/night_cluster-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=./figs/night_cluster-eps-c
+onverted-to.pdf ./figs/night_cluster.eps>
+(epstopdf)             \includegraphics on input line 314.
+runsystem(repstopdf --outfile=./figs/night_cluster-eps-converted-to.pdf ./figs/
+night_cluster.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/night_cluster-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-03-12 22:13:03
+(epstopdf)                    size: 54611 bytes.
+<./figs/night_cluster-eps-converted-to.pdf, id=361, 1445.4pt x 361.35pt>
+File: ./figs/night_cluster-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figs/night_cluster-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/night_cluster-eps-converted-to.pdf used on inpu
+t line 314.
+(pdftex.def)             Requested size: 505.89pt x 126.46887pt.
+
+Overfull \hbox (53.35722pt too wide) in paragraph at lines 313--316
+[]|   [] 
+ []
+
+[8 <./figs/night_velocity_flux-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
+
+ []
+
+Package epstopdf Info: Source file: <./figs/night_cluster_rand.eps>
+(epstopdf)                    date: 2015-03-12 19:44:07
+(epstopdf)                    size: 201563 bytes
+(epstopdf)             Output file: <./figs/night_cluster_rand-eps-converted-to
+.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./figs/night_cluster_rand-
+eps-converted-to.pdf ./figs/night_cluster_rand.eps>
+(epstopdf)             \includegraphics on input line 347.
+runsystem(repstopdf --outfile=./figs/night_cluster_rand-eps-converted-to.pdf ./
+figs/night_cluster_rand.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./figs/night_cluster_rand-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2015-03-12 22:13:04
+(epstopdf)                    size: 56050 bytes.
+<./figs/night_cluster_rand-eps-converted-to.pdf, id=380, 1445.4pt x 361.35pt>
+File: ./figs/night_cluster_rand-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figs/night_cluster_rand-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/night_cluster_rand-eps-converted-to.pdf used on
+ input line 347.
+(pdftex.def)             Requested size: 505.89pt x 126.46887pt.
+
+Overfull \hbox (53.35722pt too wide) in paragraph at lines 346--349
+[]|   [] 
+ []
+
+[9 <./figs/night_cluster-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `RJ' on page 10 undefined on input line 350.
+
+
+LaTeX Warning: Citation `Z' on page 10 undefined on input line 358.
+
+
+LaTeX Warning: Citation `WJ' on page 10 undefined on input line 358.
+
+
+LaTeX Warning: Citation `RJ' on page 10 undefined on input line 358.
+
+Missing character: There is no – in font cmr8!
+Missing character: There is no – in font cmr8!
+[10 <./figs/night_cluster_rand-eps-converted-to.pdf>] (./Paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6189 strings out of 493117
+ 85262 string characters out of 6135433
+ 160264 words of memory out of 5000000
+ 9557 multiletter control sequences out of 15000+600000
+ 12417 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,14n,38p,852b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
+Output written on Paper.pdf (10 pages, 608237 bytes).
+PDF statistics:
+ 457 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
