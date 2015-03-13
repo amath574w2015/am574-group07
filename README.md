@@ -1,6 +1,6 @@
 # am574-group07
 
-## Final Paper:
+## Final paper:
 
 * [Paper.pdf](Paper/Paper.pdf)
 
