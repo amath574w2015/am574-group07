@@ -2,7 +2,7 @@
 # Makefile for Clawpack code in this directory.
 # This version only sets the local files and frequently changed
 # options, and then includes the standard makefile pointed to by CLAWMAKE.
-CLAWMAKE = $(CLAW)/clawutil/src/Makefile.common
+CLAWMAKE = ./Makefile.common
 
 # See the above file for details and a list of make options, or type
 #   make .help
@@ -27,6 +27,15 @@ RESTART ?= False                    # Should = clawdata.restart in setrun
 # Compiler flags can be specified here or set as an environment variable
 FFLAGS ?=  
 
+# default values for initial_data.txt:
+ql = 0.2
+qr = 0.9
+
+inidata:
+	@echo $(ql) > initial_data.txt
+	@echo $(qr) >> initial_data.txt
+	@echo Wrote data to initial_data.txt
+
 # ---------------------------------
 # List of sources for this program:
 # ---------------------------------
@@ -36,7 +45,7 @@ MODULES = \
 SOURCES = \
   qinit.f \
   setprob.f \
-  zeroin.f\
+  zeroin.f \
   rp1_freeway.f90 \
   $(CLAW)/classic/src/1d/setaux.f90 \
   $(CLAW)/classic/src/1d/bc1.f \

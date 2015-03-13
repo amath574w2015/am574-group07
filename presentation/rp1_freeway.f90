@@ -27,7 +27,7 @@ subroutine rp1(maxmx,meqn,mwaves,maux,mbc,mx,ql,qr,auxl,auxr,wave,s,amdq,apdq)
     logical :: efix
  
     efix = .true.   !# Compute correct flux for transonic rarefactions
- 	eps = 0.1d0
+ 	eps = 0.01d0
  	rhom = 0.5d0
  	gamma = 0.5d0 !# Parameter for mollifier approximation
 
@@ -110,7 +110,7 @@ real(kind=8) function fp(x)
     !# Some constants
     rhom = 0.5d0
     gamma = 0.5d0
-    eps = 0.1d0
+    eps = 0.01d0
     C = 2.25228362104358101049978125556d0
 
     !# Start to integrate

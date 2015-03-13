@@ -37,8 +37,12 @@ def setrun(claw_pkg='classic'):
     #------------------------------------------------------------------
     
     probdata = rundata.new_UserData(name='probdata',fname='setprob.data')
-    probdata.add_param('beta',  200., 'for width of Gaussian data')
+    inidata = np.loadtxt('./initial_data.txt')
+    ql = inidata[0]
+    qr = inidata[1]
     
+    probdata.add_param('ql', ql, 'initial condition')
+    probdata.add_param('qr', qr, 'initial condition')
     #------------------------------------------------------------------
     # Standard Clawpack parameters to be written to claw.data:
     #------------------------------------------------------------------
@@ -54,11 +58,11 @@ def setrun(claw_pkg='classic'):
     clawdata.num_dim = num_dim
     
     # Lower and upper edge of computational domain:
-    clawdata.lower[0] = -4.000000e+00          # xlower
-    clawdata.upper[0] = 4.000000e+00          # xupper
+    clawdata.lower[0] = -8.000000e+00          # xlower
+    clawdata.upper[0] = 8.000000e+00          # xupper
     
     # Number of grid cells:
-    clawdata.num_cells[0] = 400      # mx
+    clawdata.num_cells[0] = 800      # mx
     
 
     # ---------------
@@ -105,8 +109,8 @@ def setrun(claw_pkg='classic'):
     if clawdata.output_style==1:
         # Output ntimes frames at equally spaced times up to tfinal:
         # Can specify num_output_times = 0 for no output
-        clawdata.num_output_times = 40
-        clawdata.tfinal = 2.000000
+        clawdata.num_output_times = 2
+        clawdata.tfinal = 1.500000
         clawdata.output_t0 = True  # output at initial (or restart) time?
         
     elif clawdata.output_style == 2:
