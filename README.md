@@ -1,5 +1,9 @@
 # am574-group07
 
+## Final Paper:
+
+* [Paper.pdf](Paper/Paper.pdf)
+
 ## First draft:
 
 * [Draft.pdf](First_Draft/Draft.pdf)
