@@ -10,7 +10,7 @@ In this project, we investigate two models of traffic flow based on Lighthill-Wh
 
 ## Final paper:
 
-* [Paper.pdf](Paper/Paper.pdf)
+* [Paper](Paper/Paper.pdf)
 
 ## Codes:
 
@@ -18,11 +18,11 @@ CLAWPACK codes can be found in the folder Free_Way_PDE.
 
 Car-following codes can be found in presentation file:
 
-* [presentation.ipynb](presentation/presentation.ipynb)
+* [Presentation](Presentation/presentation.ipynb)
 
 ## Presentation:
 
-* [Slides](presentation/presentation.slides.html)
+* [Slides](Presentation/presentation.slides.html)
 
 Note:
 
